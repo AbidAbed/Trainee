@@ -1,0 +1,31 @@
+company:
+pk id ,
+varchar name,
+varchar description,
+varchar email,
+varchar (hashed) password,
+varchar phoneNumber,
+varchar location,
+fk posts[] 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+student:
+pk id,
+varchar email,
+varchar (hashed) password,
+varchar (url link to the cv in which it should be uploaded on their drive) cv,
+varchar name,
+varchar fieldOfStudy,
+varchar academicYear,
+varchar GPA,
+varchar phoneNumber
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+admin:
+varchar email,
+varchar (hashed) password,
+varchar phoneNumber
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+posts:
+pk id,
+varchar content,
+varchar description,
+array[] students,
